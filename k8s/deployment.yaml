@@ -18,6 +18,13 @@ spec:
         - name: goserver
           image: "cadocruz/hello-go:0.2.2"
 
+          resources:
+            requests:
+              cpu: "0.3"
+              memory: 20Mi
+            limits:
+              cpu: "0.3"
+              memory: 25Mi  
           envFrom:
             - configMapRef:
                 name: goserver-env
