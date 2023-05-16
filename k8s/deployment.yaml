@@ -22,7 +22,7 @@ spec:
             - configMapRef:
                 name: goserver-env
             - secretRef:
-              name: goserver-secret
+                name: goserver-secret
         
           volumeMounts:
             - mountPath: "/myfamily"
